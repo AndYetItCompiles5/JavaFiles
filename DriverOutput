@@ -1,0 +1,63 @@
+> run Project.ProjectDriver
+PROJECT DRIVER
+
+Adds Accounts
+
+This tests U11: Adds 'zakluetmer','nrhansen', and 'calseth' to the database: [[NotColton, Alseth, calseth, password, a, n], [John, User, juser, user, u, Y], [Lynn, User, luser, user, u, N], [Noreen, Admin, nadmin, admin, a, Y], [Nathan, Hansen, nhansen, password, a, Y], [Zak, Luetmer, zakluetmer, password, u, Y]]
+This tests U11 if the account is already added: Should return 'username taken' error: That username has already been taken.
+This tests U11 more information is needed: Should return 'Fill in all information' error: Please fill in all required information.
+
+Deactivation
+
+This tests U13 Deactivate user : Colton Alseth should be deactivated[[NotColton, Alseth, calseth, password, a, n], [John, User, juser, user, u, Y], [Lynn, User, luser, user, u, N], [Noreen, Admin, nadmin, admin, a, Y], [Nathan, Hansen, nhansen, password, a, Y], [Zak, Luetmer, zakluetmer, password, u, Y]]
+This tests U13 the user is already deactivated : Should return 'account already deactivated' error: Account is already deactivated.
+
+Login and Login Errors
+
+U1 Logon, account is deactivated : Should return 'User deactivated' error: Account is deactivated, please contact an administrator
+U1 Logon, wrong logon information : Should return 'Wrong login info' error: Wrong login information:Please try again
+U1 Logon, successful logon : Should return 'Successful login': Successful login!
+
+Edits Account
+
+U12 Edit Account, tests if an admin can edit a account : Should change Colton's name to 'NotColton': [[NotColton, Alseth, calseth, password, a, n], [John, User, juser, user, u, Y], [Lynn, User, luser, user, u, N], [Noreen, Admin, nadmin, admin, a, Y], [Nathan, Hansen, nhansen, password, a, Y], [Zak, Luetmer, zakluetmer, password, u, Y]]
+Should return an empty field error: Missing username, password, or type
+
+Displays User Information
+
+U10 View account, tests to see if the admin can view someone's account : Should display Zak's info: [Zak, Luetmer, zakluetmer, u, Y]
+
+Creates Universities
+
+U15, checks if you can add the same school. Also adds it if its not there: depends on if the program has been run before: School has already been saved to the database.
+Should return a missing name error: Name is required
+Should return 'aready saved' error: School has already been saved to the database.
+
+Edit University
+
+U16 edit schools, changes something about a school : Should change SJU from 'RURAL' to 'URBAN': [SJU, Minnesota, URBAN, PRIVATE, 4000, 50.0, 500, 500, 50000, 91.0, 2000, 65.0, 50.0, 4, 4, 1]
+
+Displays All Universities
+
+U14, shows the admin the entire list of schools : Displays universities: [ABILENE CHRISTIAN UNIVERSITY, ADELPHI, AMERICAN UNIVERSITY OF BEIRUT, ARIZONA STATE, AUBURN, AUGSBURG, BARD, BARNARD, BARUCH, BAYLOR UNIVERSITY, BENNINGTON, BOSTON COLLEGE, BOSTON UNIVERSITY, BRANDEIS, BROWN, BRYN MAWR, BUCKNELL, BUTLER, CAL TECH, CARNEGIE MELLON, CASE WESTERN, CCNY, CHALMERS UNIVERSITY OF TECHNOLOGY, CLARK UNIVERSITY, CLARKSON UNIVERSITY, COLGATE, COLLEGE OF NEWROCHELLE, COLORADO COLLEGE, COLORADO SCHOOL OF MINES, COLUMBIA, CONNECTICUT COLLEGE, COOPER UNION, CORNELL, CORPUS CHRISTI STATE U, CSB, DALLAS BAPTIST COLLEGE, DARTMOUTH, DEPAUL UNIVERSITY, DREW, EASTERN MICHIGAN, EASTMAN SCHOOL OF MUSIC, ECOLE NATIONALE SUPERIEURE DE TELECOMMUNICATION DE PARIS, ECOLE POLYTECHNIQUE, EMORY, FLORIDA ACADEMIC UNIVERSITY, FLORIDA STATE, FLORIDA TECH, FORDHAM, GEORGE WASHINGTON, GEORGETOWN, GEORGIA TECH, GLASSBORO STATE COLLEGE, GOLDEN GATE COLLEGE, GOTHENBURG UNIVERSITY, HAMPSHIRE COLLEGE, HARVARD, HOFSTRA, HOLY CROSS, HUNTINGTON COLLEGE, ILLINOIS TECH, JOHNS HOPKINS, JUILLIARD, LEHIGH UNIVERSITY, LESLEY, LEWIS AND CLARK, MANHATTANVILLE COLLEGE, MARIST COLLEGE, MASSACHUSETTS INSTITUTE OF TECHNOLOGY, MESA, MICHIGAN STATE, MONMOUTH COLLEGE, MORGAN STATE, MOUNT HOLYOKE, NEW JERSEY TECH, NEW YORK UNIVERSITY, NEWENGLAND COLLEGE, NEWJERSEY TECH, NEWYORK IT, NICHOLLS STATE, NORTH CAROLINA STATE UNIVERSITY, NORTHWESTERN, NOTRE DAME, OBERLIN, OHIO STATE, OKLAHOMA STATE UNIVERSITY, ORAL ROBERTS UNIVERSITY, OREGON INSTITUTE OF TECHNOLOGY, OREGON STATE, PENN STATE, POLYTECHNIC INSTITUTE OF NEWYORK, PRATT, PRINCETON, PURDUE, QUEENS, REED, RENSSELAER, RICE, ROCHESTER TECH, RUTGERS, SAINT ELIZABETHS, SAM HOUSTON STATE UNIVERSITY, SAN JOSE STATE, SETON HALL, SJU, SMITH, ST JOHNS UNIVERSITY, STANFORD, STEVENS, SUFFOLK COMMUNITY COLLEGE, SUNY ALBANY, SUNY BINGHAMTON, SUNY BUFFALO, SUNY PLATTSBURGH, SUNY PURCHASE, SUNY STONY BROOK, SWARTHMORE, SYRACUSE, TEMPLE, TEXAS A&M, TEXAS CHRISTIAN UNIVERSITY, TOURO, TRINITY COLLEGE, TUFTS, TULANE, UNIVERSITE SAINT JOSEPH, UNIVERSITY OF ALABAMA, UNIVERSITY OF BRIDGEPORT, UNIVERSITY OF CALIFORNIA BERKELEY, UNIVERSITY OF CALIFORNIA DAVIS, UNIVERSITY OF CALIFORNIA LOS ANGELES, UNIVERSITY OF CALIFORNIA SAN DIEGO, UNIVERSITY OF CALIFORNIA SANTA CRUZ, UNIVERSITY OF CHICAGO, UNIVERSITY OF COLORADO, UNIVERSITY OF DENVER, UNIVERSITY OF EVANSVILLE, UNIVERSITY OF GEORGIA, UNIVERSITY OF HARTFORD, UNIVERSITY OF KANSAS, UNIVERSITY OF LOWELL, UNIVERSITY OF MAINE, UNIVERSITY OF MARYLAND, UNIVERSITY OF MASSACHUSETTS AMHERST, UNIVERSITY OF MICHIGAN, UNIVERSITY OF MINNESOTA, UNIVERSITY OF MISSISSIPPI, UNIVERSITY OF MISSOURI, UNIVERSITY OF MONTANA, UNIVERSITY OF NORTHCAROLINA, UNIVERSITY OF NOTRE DAME, UNIVERSITY OF OKLAHOMA, UNIVERSITY OF OREGON, UNIVERSITY OF PENNSYLVANIA, UNIVERSITY OF PITTSBURGH, UNIVERSITY OF PORTLAND, UNIVERSITY OF PUGET SOUND, UNIVERSITY OF ROCHESTER, UNIVERSITY OF SAN FRANCISCO, UNIVERSITY OF SOUTH DAKOTA, UNIVERSITY OF SOUTHERN CALIFORNIA, UNIVERSITY OF TEXAS, UNIVERSITY OF THE DISTRICT OF COLUMBIA, UNIVERSITY OF THE PACIFIC, UNIVERSITY OF THE SOUTH, UNIVERSITY OF TOLEDO, UNIVERSITY OF TULSA, UNIVERSITY OF VIRGINIA, UNIVERSITY OF WASHINGTON, UNIVERSITY WEST VIRGINIA, VANDERBILT, VASSAR, VILLANOVA, WALLA WALLA COLLEGE, WASHINGTON AND LEE, WAYNE STATE COLLEGE, WESLEYAN, WILLIAM PATERSON COLLEGE, WORCESTER, YALE, YANKTOWN COLLEGE]
+
+Save Universities
+
+Output depends on if the program has been run before: School has already been saved to the user's list
+U7 save school, saves a school to the user : Output depends on if the program has been run before: School Saved!
+U6 view schools, view a list of schools the user has saved : Should return that ADELPHI and QUEENS has been saved by Zak: [ADELPHI, QUEENS]
+
+Removes University From User List
+
+U9 , removes a school from the user's list : Should return that Queens has been removed: [QUEENS]
+
+Display Specific University
+Should return CSB's information: [CSB, Minnesota, RURAL, PRIVATE, 4000, 50.0, 500, 500, 50000, 91.0, 2000, 65.0, 50.0, 4, 4, 1, Math, Science]
+
+Search Function
+
+U2 Search for schools, The user searchs for a school : U4 dispalys the result of the search : Should return all schools with 'College' in their name: [NEWENGLAND COLLEGE, CONNECTICUT COLLEGE, HAMPSHIRE COLLEGE, MONMOUTH COLLEGE, MARIST COLLEGE, BOSTON COLLEGE, COLORADO COLLEGE, SUFFOLK COMMUNITY COLLEGE, TRINITY COLLEGE, COLLEGE OF NEWROCHELLE, GOLDEN GATE COLLEGE, GLASSBORO STATE COLLEGE, WAYNE STATE COLLEGE, MANHATTANVILLE COLLEGE, YANKTOWN COLLEGE, DALLAS BAPTIST COLLEGE, HUNTINGTON COLLEGE, WALLA WALLA COLLEGE, WILLIAM PATERSON COLLEGE]
+
+Recommended School Function
+
+Returns five recommended schools similar to 'QUEENS': [BARUCH, SUNY BUFFALO, UNIVERSITY OF PITTSBURGH, UNIVERSITY OF WASHINGTON, TEMPLE]
