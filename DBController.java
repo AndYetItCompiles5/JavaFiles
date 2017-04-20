@@ -949,5 +949,50 @@ public class DBController {
     
     return topFive;
   }
+
+  /**
+   * Returns the list of emphases of the given school
+   * 
+   * @param school the name of the school looking for emphases
+   * @return an ArrayList of strings with the school's emphases
+   */
+  public ArrayList<String> getEmphases(String school){
+	  
+	  String[][] namesWithEmphases = dataBase.university_getNamesWithEmphases();
+	  ArrayList<String> emphasesList = new ArrayList<String>();
+	  
+	  for(int i = 0; i < namesWithEmphases.length; i++){
+		  if(namesWithEmphases[i][0].equals(school)){
+				  emphasesList.add(namesWithEmphases[i][1]);
+		  }
+	  }  
+	  return emphasesList;
+  }
+
+  /**
+   * Removes the givem emphasis from the given school
+   * 
+   * @param school the school emphasis will be removed from
+   * @param emphasis the emphasis to be removed
+   * @return true if successfully removed
+   */
+  public boolean removeEmphases(String school, String emphasis){
+	 int value = dataBase.university_removeUniversityEmphasis(school, emphasis);
+	 if(value == -1) return false;
+	 else return true;
+  }
   
+  /**
+   * Adds the given emphasis to the given school
+   * 
+   * @param school the school emphasis will be added to
+   * @param emphasis the emphasis to be added
+   * @return true if successfully added
+   */
+  public boolean addEmphases(String school, String emphasis){
+	  
+	  int value = dataBase.university_addUniversityEmphasis(school, emphasis);
+	  if(value == -1) return false;
+	  else return true;
+  }
 }
