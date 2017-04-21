@@ -1,5 +1,4 @@
 package Project;
-
 import java.util.*;
 import dblibrary.project.csci230.UniversityDBLibrary;
 import java.lang.*;
@@ -248,6 +247,7 @@ public class DBController {
         return true;
       }
     }
+    
     //throw new IllegalArgumentException("University was not found");
     return false;
   }
@@ -949,7 +949,7 @@ public class DBController {
     
     return topFive;
   }
-
+  
   /**
    * Returns the list of emphases of the given school
    * 
@@ -968,13 +968,13 @@ public class DBController {
 	  }  
 	  return emphasesList;
   }
-
+  
   /**
    * Removes the givem emphasis from the given school
    * 
    * @param school the school emphasis will be removed from
    * @param emphasis the emphasis to be removed
-   * @return true if successfully removed
+   * @return
    */
   public boolean removeEmphases(String school, String emphasis){
 	 int value = dataBase.university_removeUniversityEmphasis(school, emphasis);
@@ -987,7 +987,7 @@ public class DBController {
    * 
    * @param school the school emphasis will be added to
    * @param emphasis the emphasis to be added
-   * @return true if successfully added
+   * @return
    */
   public boolean addEmphases(String school, String emphasis){
 	  
