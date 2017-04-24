@@ -343,8 +343,8 @@ public class DBController {
   public boolean saveSchool(String user, String school) {
     int r = dataBase.user_saveSchool(user, school);
     
-    if (r == -1) {
-      throw new IllegalArgumentException("There was an error");
+    if (r < 0) {
+      return false;
     }
     
     return true;
