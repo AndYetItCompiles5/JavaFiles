@@ -44,7 +44,7 @@ public class DBController {
       }
     }
     if (found == false) {
-      throw new IllegalArgumentException("The name you have entered was not found.");
+      return null;
     }
     
     Account account = new Account(first, last, username, password, type, status);

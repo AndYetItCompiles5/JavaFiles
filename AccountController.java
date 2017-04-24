@@ -34,11 +34,13 @@ public class AccountController{
    * @throws IllegalArgumentException if account is deactivated
    * @return boolean for if the user successfully logged in
    */
-  public boolean login(String username, String password)
+  public int login(String username, String password)
   {
 
     Account account = dbController.getAccount(username);
-    
+    if(account==null){
+    	return 2;
+    }
     String username1 = account.getUsername();
     String password1 = account.getPassword();
     char   type      = account.getType();
@@ -46,17 +48,17 @@ public class AccountController{
     
     if(!password1.equals(password) || !username1.equals(username))
     {
-     throw new IllegalArgumentException("Username/password Incorrect");
+     return 2;
     }
     
     if(status == 'n'|| status=='N')
     {
-     throw new IllegalArgumentException("Account is deactivated");
+     return 1;
     }
     
     setLoggedIn(username);
     
-    return true;
+    return 0;
   }
   
   

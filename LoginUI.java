@@ -33,9 +33,9 @@ public class LoginUI
    * 
    * @return a boolean if an account is logged in
    */
-  public boolean Login(String username, String password)
+  public int Login(String username, String password)
   {
-    boolean result = aController.login(username,password);
+    int result = aController.login(username,password);
     loggedIn = username;
     return result;
   }
