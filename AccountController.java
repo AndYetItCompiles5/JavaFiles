@@ -119,7 +119,7 @@ public class AccountController{
    * 
    * @return whether the user was deactivated or if there was an error
    */
-  public boolean deactivateUser(String username)
+  public int deactivateUser(String username)
   {
     return dbController.deactivateUser(username);
   }
