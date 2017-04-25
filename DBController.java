@@ -603,13 +603,13 @@ public class DBController {
    */
   public String addAccount(String first, String last, String username, String password, char type) {
     boolean taken = isUsernameTaken(username);
-    if (username.equals("") || password.equals("")) {
-      throw new IllegalArgumentException("Username or password cannot be empty");
-    } else if (!taken) {
+    if (username.equals("") || password.equals("") || type == ' ') {
+      return "1";
+    }else if (!taken) {
       dataBase.user_addUser(first, last, username, password, type);
-      return "Addition Successful!";
+      return "0";
     } else {
-      throw new IllegalArgumentException("Username is taken");
+    	return "2";
     }
   }
   
