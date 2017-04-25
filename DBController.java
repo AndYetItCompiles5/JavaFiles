@@ -44,7 +44,7 @@ public class DBController {
       }
     }
     if (found == false) {
-      throw new IllegalArgumentException("The name you have entered was not found.");
+      return null;
     }
     
     Account account = new Account(first, last, username, password, type, status);
@@ -343,8 +343,8 @@ public class DBController {
   public boolean saveSchool(String user, String school) {
     int r = dataBase.user_saveSchool(user, school);
     
-    if (r == -1) {
-      throw new IllegalArgumentException("There was an error");
+    if (r < 0) {
+      return false;
     }
     
     return true;
@@ -364,20 +364,13 @@ public class DBController {
     ArrayList<String> listSchools = new ArrayList<String>();
     String[][] namesWithSchools = dataBase.user_getUsernamesWithSavedSchools();
     boolean added = false;
-    if(isDeactivated(user)){
-    	throw new IllegalArgumentException("The user is deactivated");
-    }
     if (namesWithSchools == null) {
       return listSchools;
     }
     for (int i = 0; i < namesWithSchools.length; i++) {
       if (namesWithSchools[i][0].equals(user)) {
         listSchools.add(namesWithSchools[i][1]);
-        added = true;
       }
-    }
-    if (added == false) {
-      throw new IllegalArgumentException("The user: " + user + " does not have any saved schools");
     }
     return listSchools;
   }
@@ -697,11 +690,11 @@ public class DBController {
    * 
    * @return confirmation message if the user was deactivated or not
    */
-  public boolean deactivateUser(String username) {
+  public int deactivateUser(String username) {
     if (!isUsernameTaken(username)) {
-      throw new IllegalArgumentException("The name you have entered was not found.");
+      return 1;
     } else if (isDeactivated(username)) {
-      throw new IllegalArgumentException("Account is deactivated");
+      return 2;
     }
     
     else {
@@ -714,7 +707,7 @@ public class DBController {
       
       dataBase.user_editUser(username, first, last, password, type, 'N');
       
-      return true;
+      return 0;
     }
   }
   
@@ -994,5 +987,18 @@ public class DBController {
 	  int value = dataBase.university_addUniversityEmphasis(school, emphasis);
 	  if(value == -1) return false;
 	  else return true;
+  }
+  
+  public void deleteUser(String username){
+	  ArrayList<String> userSavedSchools = getUserSavedSchools(username);
+	  if(userSavedSchools.size()==0){
+		  dataBase.user_deleteUser(username);
+	  }
+	  else{
+		  for(int i=0;i<userSavedSchools.size();i++){
+			  dataBase.user_removeSchool(username, userSavedSchools.get(i));
+		  }
+		  dataBase.user_deleteUser(username);
+	  }
   }
 }

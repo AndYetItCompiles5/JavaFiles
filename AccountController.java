@@ -38,21 +38,24 @@ public class AccountController{
   {
 
     Account account = dbController.getAccount(username);
-    
+    if(account==null){
+    	return 2;
+    }
     String username1 = account.getUsername();
     String password1 = account.getPassword();
     char   status    = account.getStatus();
     
     if(!password1.equals(password) || !username1.equals(username))
     {
-     return 1;
+     	return 2;
     }
     
     if(status == 'n'|| status=='N')
     {
-     return 2;
+     	return 1;
     }
     setLoggedIn(username);
+
     return 0;
   }
   
@@ -114,7 +117,7 @@ public class AccountController{
    * 
    * @return whether the user was deactivated or if there was an error
    */
-  public boolean deactivateUser(String username)
+  public int deactivateUser(String username)
   {
     return dbController.deactivateUser(username);
   }

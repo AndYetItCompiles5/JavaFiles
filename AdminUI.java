@@ -138,7 +138,7 @@ public class AdminUI{
    * @param username of the user
    */
 
-  public boolean deactivateUser(String username)
+  public int deactivateUser(String username)
   {
     return aController.deactivateUser(username);
   }

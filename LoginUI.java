@@ -67,6 +67,6 @@ public class LoginUI
    * @return a string if an account is logged in
    */
   public String getLoggedIn(){
-   return loggedIn;
+   return aController.getLoggedIn();
   }
 }
