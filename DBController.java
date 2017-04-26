@@ -330,6 +330,34 @@ public class DBController {
   }
   
   /**
+   * Deletes a school from the database
+   * 
+   * @param name:the name of the school being deleted
+   * @return a boolean if the school was deleted
+   */
+  
+  public boolean deleteUniversity(String name){
+	  ArrayList<String> emphases = new ArrayList<String>();
+	  emphases = getEmphases(name);
+	  for(String temp: emphases){
+		  removeEmphases(name,temp);
+	  }
+	  String [][] savedSchools = dataBase.user_getUsernamesWithSavedSchools();
+	  for(int i = 0;i<savedSchools.length;i++){
+		  if(savedSchools[i][1].equals(name)){
+			  removeSchool(savedSchools[i][0],name);
+		  }
+	  }
+	  int result = dataBase.university_deleteUniversity(name);
+	  if(result==-1){
+		  return false;
+	  }
+	  else{
+		  return true;
+	  }
+  }
+  
+  /**
    * Saves a school to the user's list of saved schools
    * 
    * @param user:the
@@ -711,6 +739,25 @@ public class DBController {
     }
   }
   
+  public int reactivateUser(String username) {
+	    if (!isUsernameTaken(username)) {
+	      return 1;
+	    
+	    }
+	    else {
+	      Account account = getAccount(username);
+	      
+	      String first = account.getFirstName();
+	      String last = account.getLastName();
+	      String password = account.getPassword();
+	      char type = account.getType();
+	      
+	      dataBase.user_editUser(username, first, last, password, type, 'Y');
+	      
+	      return 0;
+	    }
+	  }
+  
   /**
    * Find recommendations of closely related schools
    * 
@@ -1001,4 +1048,5 @@ public class DBController {
 		  dataBase.user_deleteUser(username);
 	  }
   }
-}
+  }
+
