@@ -302,7 +302,7 @@ public class DBController {
    *        school is already saved
    * @return success message if the school has been added successfully
    */
-  public boolean addUniversity(String name, String state, String location, String control, int numStudents,
+  public int addUniversity(String name, String state, String location, String control, int numStudents,
                                double perFemale, int satVerbal, int satMath, int expenses, double perFA, int numApplicants,
                                double perAdmitted, double perEnrolled, int academicScale, int socialScale, int lifeScale,
                                ArrayList<String> emphases) {
@@ -311,9 +311,9 @@ public class DBController {
                                   expenses, perFA, numApplicants, perAdmitted, perEnrolled, academicScale, socialScale, lifeScale,
                                   emphases);
     if (name.equals("") || name == null) {
-      throw new IllegalArgumentException("Name is required");
+      return 1;
     } else if (isSchoolSaved(name)) {
-      throw new IllegalArgumentException("School is already saved");
+      return 2;
     } else {
       dataBase.university_addUniversity(name, state, location, control, numStudents, perFemale, satVerbal,
                                         satMath, expenses, perFA, numApplicants, perAdmitted, perEnrolled, academicScale, socialScale,
@@ -325,7 +325,7 @@ public class DBController {
         }
         
       }
-      return true;
+      return 0;
     }
   }
   
