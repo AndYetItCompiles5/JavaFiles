@@ -1,5 +1,6 @@
 package Project;
 import java.util.*;
+import java.io.*;
 import dblibrary.project.csci230.UniversityDBLibrary;
 import java.lang.*;
 
@@ -1001,4 +1002,29 @@ public class DBController {
 		  dataBase.user_deleteUser(username);
 	  }
   }
-}
+  
+  public String findWebsite(String name){
+	  String web="";
+	  boolean found = false;
+	  try{
+	      Scanner sc = new Scanner(new FileReader("Websites.txt"));
+	      while(sc.hasNextLine() && found==false){
+	        String schoolName = sc.nextLine();
+	        String website = sc.nextLine();
+	        if(schoolName.equals(name)){
+	        	web=website;
+	        	found=true;
+	        }
+	      }
+	      sc.close();
+	      return web;
+	    }
+	    catch(IOException ioe){
+	      return "didnt find file"; 
+	    }
+  }
+  public static void main (String []args){
+	  DBController db = new DBController();
+	  System.out.println(db.findWebsite("BUCKNELL"));
+  }
+  }
