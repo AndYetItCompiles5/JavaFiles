@@ -1052,17 +1052,22 @@ public class DBController {
 
   
   public String findWebsite(String name){
-	  String web="";
+	  String web="-1";
 	  boolean found = false;
 	  try{
 	      Scanner sc = new Scanner(new FileReader("Websites.txt"));
 	      while(sc.hasNextLine() && found==false){
 	        String schoolName = sc.nextLine();
-	        String website = sc.nextLine();
 	        if(schoolName.equals(name)){
-	        	web=website;
+	        	web=sc.nextLine();
 	        	found=true;
 	        }
+	        else{
+	        	sc.nextLine();
+	        }
+	      }
+	      if (web.equals("-1")){
+	    	  return "https://www.google.com/";
 	      }
 	      sc.close();
 	      return web;
@@ -1073,7 +1078,7 @@ public class DBController {
   }
   public static void main (String []args){
 	  DBController db = new DBController();
-	  System.out.println(db.findWebsite("BUCKNELL"));
+	  System.out.println(db.findWebsite("OBERLIN"));
   }
   }
 
