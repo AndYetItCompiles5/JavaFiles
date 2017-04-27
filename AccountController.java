@@ -59,6 +59,9 @@ public class AccountController{
     return 0;
   }
   
+  public void loginGuest(){
+	  loggedIn="guest";
+  }
   
   /**
    * Logout whoever is logged in

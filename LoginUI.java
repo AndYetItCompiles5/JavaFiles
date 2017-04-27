@@ -39,6 +39,15 @@ public class LoginUI
     loggedIn = username;
     return result;
   }
+  
+  /**
+   * Logs in a guest
+   */
+  public void loginGuest()
+  {
+    aController.loginGuest();
+    loggedIn = "guest";
+  }
   /**
    * Displays an error if the user enters the wrong login information
    * @return error message. Cause by wrong log in information

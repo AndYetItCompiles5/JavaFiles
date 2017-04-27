@@ -64,7 +64,7 @@ public class AdminUI{
    * 
    * @return true if the University was added else return false
    */
-  public boolean addUniversity(String name, String state, String location, String control, int numStudents,
+  public int addUniversity(String name, String state, String location, String control, int numStudents,
                               double perFemale, int satVerbal, int satMath, int expenses, double perFA,
                               int numApplicants, double perAdmitted, double perEnrolled, int academicScale,
                               int socialScale, int lifeScale, ArrayList<String> emphases){

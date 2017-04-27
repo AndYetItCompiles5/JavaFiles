@@ -1,5 +1,6 @@
 package Project;
 import java.util.*;
+import java.io.*;
 import dblibrary.project.csci230.UniversityDBLibrary;
 import java.lang.*;
 
@@ -327,6 +328,34 @@ public class DBController {
       }
       return 0;
     }
+  }
+  
+  /**
+   * Deletes a school from the database
+   * 
+   * @param name:the name of the school being deleted
+   * @return a boolean if the school was deleted
+   */
+  
+  public boolean deleteUniversity(String name){
+	  ArrayList<String> emphases = new ArrayList<String>();
+	  emphases = getEmphases(name);
+	  for(String temp: emphases){
+		  removeEmphases(name,temp);
+	  }
+	  String [][] savedSchools = dataBase.user_getUsernamesWithSavedSchools();
+	  for(int i = 0;i<savedSchools.length;i++){
+		  if(savedSchools[i][1].equals(name)){
+			  removeSchool(savedSchools[i][0],name);
+		  }
+	  }
+	  int result = dataBase.university_deleteUniversity(name);
+	  if(result==-1){
+		  return false;
+	  }
+	  else{
+		  return true;
+	  }
   }
   
   /**
@@ -711,6 +740,25 @@ public class DBController {
     }
   }
   
+  public int reactivateUser(String username) {
+	    if (!isUsernameTaken(username)) {
+	      return 1;
+	    
+	    }
+	    else {
+	      Account account = getAccount(username);
+	      
+	      String first = account.getFirstName();
+	      String last = account.getLastName();
+	      String password = account.getPassword();
+	      char type = account.getType();
+	      
+	      dataBase.user_editUser(username, first, last, password, type, 'Y');
+	      
+	      return 0;
+	    }
+	  }
+  
   /**
    * Find recommendations of closely related schools
    * 
@@ -1001,4 +1049,38 @@ public class DBController {
 		  dataBase.user_deleteUser(username);
 	  }
   }
-}
+
+  
+  public String findWebsite(String name){
+	  String web="-1";
+	  boolean found = false;
+	  try{
+	      Scanner sc = new Scanner(new FileReader("Websites.txt"));
+	      while(sc.hasNextLine() && found==false){
+	        String schoolName = sc.nextLine();
+	        if(schoolName.equals(name)){
+	        	web=sc.nextLine();
+	        	found=true;
+	        }
+	        else{
+	        	sc.nextLine();
+	        }
+	      }
+	      if (web.equals("-1")){
+	    	  return "https://www.google.com/";
+	      }
+	      sc.close();
+	      return web;
+	    }
+	    catch(IOException ioe){
+	      return "didnt find file"; 
+	    }
+  }
+  public static void main (String []args){
+	  DBController db = new DBController();
+	  System.out.println(db.findWebsite("OBERLIN"));
+  }
+  }
+
+
+

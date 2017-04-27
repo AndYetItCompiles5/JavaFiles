@@ -148,6 +148,19 @@ public class Account{
   }
   
   /**
+   * Gets the opposite type of the account
+   * @return the account's opposite type
+   */
+  public char getOppositeType()
+  {
+    if(type=='u'||type=='U'){
+    	return 'A';
+    }
+    else
+    	return 'U';
+  }
+  
+  /**
    * Sets the type of the account
    * @param type: the type being set
    * @throws IllegalArgumentException if type != a or u
@@ -169,6 +182,19 @@ public class Account{
   public char getStatus()
   {
     return status; 
+  }
+  
+  /**
+   * Gets the opposite status of the account
+   * @return the account's opposite status
+   */
+  public char getOppositeStatus()
+  {
+	  if(this.status=='Y'|| type=='y'){
+		  return 'N';
+	  }
+	  else
+		  return 'Y';
   }
   
   /**

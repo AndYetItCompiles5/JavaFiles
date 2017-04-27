@@ -176,7 +176,7 @@ public class SearchController {
 																			else{
 																				ArrayList<String> currentUEmphases = allUniversities.get(i).getEmphases();
 																				for(int e=0;e<currentUEmphases.size();e++){
-																					if(emphases.contains(currentUEmphases.get(e))){
+																					if(emphases.contains(currentUEmphases.get(e).toUpperCase())){
 																						answer.add(allUniversities.get(i).getName());
 																					}
 																				}

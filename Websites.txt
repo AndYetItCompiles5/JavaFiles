@@ -1,0 +1,356 @@
+ABILENE CHRISTIAN UNIVERSITY
+http://www.acu.edu/
+ADELPHI
+http://www.adelphi.edu/
+AMERICAN UNIVERSITY OF BEIRUT
+https://www.aub.edu.lb/
+ARIZONA STATE
+https://www.asu.edu/
+AUBURN
+http://www.auburn.edu/
+AUGSBURG
+http://www.augsburg.edu/
+BARD
+http://www.bard.edu/
+BARNARD
+https://barnard.edu/
+BARUCH
+https://www.baruch.cuny.edu/
+BAYLOR UNIVERSITY
+https://www.baylor.edu/
+BENNINGTON
+http://www.bennington.edu/
+BOSTON COLLEGE
+http://www.bc.edu/
+BOSTON UNIVERSITY
+http://www.bu.edu/
+BRANDEIS
+https://www.brandeis.edu/
+BROWN
+https://www.brown.edu/
+BRYN MAWR
+https://www.brynmawr.edu/
+BUCKNELL
+http://www.bucknell.edu/
+BUTLER
+https://www.butler.edu/
+CAL TECH
+http://www.caltech.edu/
+CARNEGIE MELLON
+http://www.cmu.edu/
+CASE WESTERN
+https://case.edu/
+CCNY
+https://www.ccny.cuny.edu/
+CHALMERS UNIVERSITY OF TECHNOLOGY
+http://www.chalmers.se/en/Pages/default.aspx
+CLARK UNIVERSITY
+http://www.clarku.edu/
+CLARKSON UNIVERSITY
+https://www.clarkson.edu/
+COLGATE
+http://www.colgate.com/en/us/oc/
+COLLEGE OF NEWROCHELLE
+http://www.cnr.edu/
+COLORADO COLLEGE
+https://www.coloradocollege.edu/
+COLORADO SCHOOL OF MINES
+https://www.mines.edu/
+COLUMBIA
+http://www.columbia.edu/
+CONNECTICUT COLLEGE
+https://www.conncoll.edu/
+COOPER UNION
+https://cooper.edu/welcome
+CORNELL
+https://www.cornell.edu/
+CORPUS CHRISTI STATE U
+https://www.tamucc.edu/
+CSB
+http://csbsju.edu/
+DALLAS BAPTIST COLLEGE
+http://www.dbu.edu/
+DARTMOUTH
+http://dartmouth.edu/
+DEPAUL UNIVERSITY
+https://www.depaul.edu/Pages/default.aspx
+DREW
+https://www.drew.edu/1/
+EASTERN MICHIGAN
+http://www.emich.edu/
+EASTMAN SCHOOL OF MUSIC
+https://www.esm.rochester.edu/
+ECOLE NATIONALE SUPERIEURE DE TELECOMMUNICATION DE...
+https://en.wikipedia.org/wiki/T%C3%A9l%C3%A9com_ParisTech
+ECOLE POLYTECHNIQUE
+https://www.polytechnique.edu/en
+EMORY
+http://www.emory.edu/home/index.html
+FLORIDA ACADEMIC UNIVERSITY
+http://www.ufl.edu/academics/
+FLORIDA STATE
+https://www.fsu.edu/
+FLORIDA TECH
+http://www.fit.edu/
+FORDHAM
+https://www.fordham.edu/
+GEORGE WASHINGTON
+https://www.gwu.edu/
+GEORGETOWN
+https://www.georgetown.edu/
+GEORGIA TECH
+http://www.gatech.edu/
+GLASSBORO STATE COLLEGE
+http://www.rowan.edu/subpages/about/history/
+GOLDEN GATE COLLEGE
+http://www.ggu.edu/
+GOTHENBURG UNIVERSITY
+http://www.gu.se/english
+HAMPSHIRE COLLEGE
+https://www.hampshire.edu/
+HARVARD
+http://www.harvard.edu/
+HOFSTRA
+http://www.hofstra.edu/home/index.html
+HOLY CROSS
+http://www.hclutheranchurch.org/
+HUNTINGTON COLLEGE
+http://www.huntingdon.edu/
+ILLINOIS TECH
+http://web.iit.edu/
+JOHNS HOPKINS
+https://www.jhu.edu/
+JUILLIARD
+https://www.juilliard.edu/
+LEHIGH UNIVERSITY
+http://www1.lehigh.edu/
+LESLEY
+http://www.lesley.edu/
+MANHATTANVILLE COLLEGE
+https://www.mville.edu/
+MARIST COLLEGE
+https://www.marist.edu/
+MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+http://web.mit.edu/
+MESA
+http://www.coloradomesa.edu/
+MICHIGAN STATE
+https://msu.edu/
+MONMOUTH COLLEGE
+https://ou.monmouthcollege.edu/default.aspx
+MORGAN STATE
+http://www.morgan.edu/
+MOUNT HOLYOKE
+https://www.mtholyoke.edu/
+NEW JERSEY TECH
+http://www.njit.edu/
+NEW YORK UNIVERSITY
+https://www.nyu.edu/
+NEWENGLAND COLLEGE
+http://www.nec.edu/
+NEWJERSEY TECH
+http://www.njit.edu/
+NEWYORK IT
+http://www.nyit.edu/
+NICHOLLS STATE
+https://www.nicholls.edu/
+NORTH CAROLINA STATE UNIVERSITY
+https://www.nicholls.edu/
+NORTHWESTER
+http://www.northwestern.edu/
+NOTRE DAME
+https://www.nd.edu/
+OBERLIN
+https://home.oberlin.edu/
+OHIO STATE
+https://www.osu.edu/
+OKLAHOMA STATE UNIVERSITY
+https://go.okstate.edu/
+ORAL ROBERTS UNIVERSITY
+http://www.oru.edu/
+OREGON INSTITUTE OF TECHNOLOGY
+http://www.oit.edu/
+OREGON STATE
+http://oregonstate.edu/
+PENN STATE
+http://www.psu.edu/
+POLYTECHNIC INSTITUTE OF NEWYORK
+http://engineering.nyu.edu/about/merger
+PRATT
+https://www.pratt.edu/
+PRINCETON
+https://www.princeton.edu/main/
+PURDUE
+http://www.purdue.edu/
+QUEENS
+http://www.qc.cuny.edu/Pages/home.aspx
+REED
+http://www.reed.edu/
+RENSSELAER
+http://rpi.edu/
+RICE
+http://www.rice.edu/
+ROCHESTER TECH
+http://www.rctc.edu/
+RUTGERS
+http://www.rutgers.edu/
+SAINT ELIZABETHS
+http://www.cse.edu/
+SAM HOUSTON STATE UNIVERSITY
+http://www.shsu.edu/
+SAN JOSE STATE
+http://www.sjsu.edu/
+SETON HALL
+https://www.shu.edu/
+SJU
+https://www.csbsju.edu/
+SMITH
+https://www.smith.edu/
+ST JOHNS UNIVERSITY
+http://www.stjohns.edu/
+STANFORD
+https://www.stanford.edu/
+STEVENS
+https://www.stevens.edu/admissions/graduate-admissions
+SUFFOLK COMMUNITY COLLEGE
+http://www.suffolk.edu/
+SUNY ALBANY
+http://www.albany.edu/
+SUNY BINGHAMTON
+http://www.binghamton.edu/
+SUNY BUFFALO
+http://suny.buffalostate.edu/
+SUNY PLATTSBURGH
+http://web.plattsburgh.edu/
+SUNY PURCHASE
+https://www.purchase.edu/
+SUNY STONY BROOK
+https://www.stonybrook.edu/
+SWARTHMORE
+http://www.swarthmore.edu/
+SYRACUSE
+https://www.syracuse.edu/
+TEMPLE
+https://www.temple.edu/
+TEXAS A&M
+https://www.tamu.edu/
+TEXAS CHRISTIAN UNIVERSITY
+http://www.tcu.edu/
+TOURO
+https://www.touro.edu/
+TRINITY COLLEGE
+http://www.trincoll.edu/Pages/default.aspx
+TUFTS
+https://www.tufts.edu/
+TULANE
+https://tulane.edu/
+UNIVERSITE SAINT JOSEPH
+http://www.usj.edu/
+UNIVERSITY OF ALABAMA
+https://www.ua.edu/
+UNIVERSITY OF BRIDGEPORT
+http://www.bridgeport.edu/
+UNIVERSITY OF CALIFORNIA BERKELEY
+http://www.berkeley.edu/
+UNIVERSITY OF CALIFORNIA DAVIS
+https://www.ucdavis.edu/
+UNIVERSITY OF CALIFORNIA LOS ANGELES
+http://www.ucla.edu/
+UNIVERSITY OF CALIFORNIA SAN DIEGO
+https://ucsd.edu/
+UNIVERSITY OF CALIFORNIA SANTA CRUZ
+https://www.ucsc.edu/
+UNIVERSITY OF CHICAGO
+http://www.uchicago.edu/
+UNIVERSITY OF COLORADO
+http://www.cu.edu/
+UNIVERSITY OF DENVER
+http://www.du.edu/
+UNIVERSITY OF EVANSVILLE
+https://www.evansville.edu/
+UNIVERSITY OF GEORGIA
+http://www.uga.edu/
+UNIVERSITY OF HARTFORD
+http://www.hartford.edu/
+UNIVERSITY OF KANSAS
+https://www.ku.edu/
+UNIVERSITY OF LOWELL
+https://www.uml.edu/
+UNIVERSITY OF MAINE
+https://umaine.edu/
+UNIVERSITY OF MASSACHUSETTS AMHERST
+https://www.umass.edu/
+UNIVERSITY OF MICHIGAN
+https://www.umich.edu/
+UNIVERSITY OF MINNESOTA
+https://twin-cities.umn.edu/
+UNIVERSITY OF MISSISSIPPI
+https://www.olemiss.edu/
+UNIVERSITY OF MISSOURI
+http://missouri.edu/
+UNIVERSITY OF MONTANA
+http://www.umt.edu/
+UNIVERSITY OF NORTHCAROLINA
+http://www.unc.edu/
+UNIVERSITY OF NOTRE DAME
+https://www.nd.edu/
+UNIVERSITY OF OKLAHOMA
+https://www.ou.edu/
+UNIVERSITY OF OREGON
+https://uoregon.edu/
+UNIVERSITY OF PENNSYLVANIA
+http://www.upenn.edu/
+UNIVERSITY OF PITTSBURGH
+http://www.pitt.edu/
+UNIVERSITY OF PORTLAND
+https://www1.up.edu/
+UNIVERSITY OF PUGET SOUND
+https://www.pugetsound.edu/
+UNIVERSITY OF ROCHESTER
+https://www.rochester.edu/
+UNIVERSITY OF SAN FRANCISCO
+https://www.usfca.edu/
+UNIVERSITY OF SOUTH DAKOTA
+http://www.usd.edu/
+UNIVERSITY OF SOUTHERN CALIFORNIA
+http://www.usc.edu/
+UNIVERSITY OF TEXAS
+http://www.utexas.edu/
+UNIVERSITY OF THE DISTRICT OF COLUMBIA
+https://www.udc.edu/
+UNIVERSITY OF THE PACIFIC
+http://www.pacific.edu/
+UNIVERSITY OF THE SOUTH
+http://www.sewanee.edu/
+UNIVERSITY OF TOLEDO
+http://www.utoledo.edu/
+UNIVERSITY OF TULSA
+https://utulsa.edu/
+UNIVERSITY OF VIRGINIA
+http://www.virginia.edu/
+UNIVERSITY OF WASHINGTON
+https://www.washington.edu/
+UNIVERSITY WEST VIRGINIA
+https://www.wvu.edu/
+VANDERBILT
+https://www.vanderbilt.edu/
+VASSAR
+https://www.vassar.edu/
+VILLANOVA
+http://www1.villanova.edu/main.html
+WALLA WALLA COLLEGE
+https://wallawalla.edu/
+WASHINGTON AND LEE
+https://www.wlu.edu/
+WAYNE STATE COLLEGE
+https://www.wsc.edu/
+WESLEYAN
+http://www.wesleyan.edu/
+WILLIAM PATERSON COLLEGE
+http://www.wpunj.edu/
+WORCESTER
+https://www.worcester.edu/
+YALE
+https://www.yale.edu/
+YANKTOWN COLLEGE
+https://www.yanktoncollege.org/
