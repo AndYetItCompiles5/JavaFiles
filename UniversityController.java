@@ -42,7 +42,7 @@ public class UniversityController
    * @param emphases up to five areas of study the University excels at (all Strings)
    * @return an string indicating the number of university records inserted or -1 if school name is NOT unique or if a database error is encountered
    */
-  public boolean addUniversity(String name, String state, String location, String control, int numStudents,
+  public int addUniversity(String name, String state, String location, String control, int numStudents,
                                double perFemale, int satVerbal, int satMath, int expenses, double perFA,
                                int numApplicants, double perAdmitted, double perEnrolled, int academicScale,
                                int socialScale, int lifeScale, ArrayList<String> emphases)
