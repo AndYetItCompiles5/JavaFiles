@@ -587,7 +587,7 @@ public class DBController {
   public boolean isSchoolSaved(String name) {
     String[][] universityList = dataBase.university_getUniversities();
     for (int i = 0; i < universityList.length; i++) {
-      if (universityList[i][0].equals(name)) {
+      if (universityList[i][0].toUpperCase().equals(name.toUpperCase())) {
         return true;
       }
     }
